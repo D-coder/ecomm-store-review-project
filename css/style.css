@@ -232,18 +232,26 @@
 .page-footer a{
     color: #ffffff;
     line-height: 1.2;
-    text-decoration: none;;
+    text-decoration: none;
+    padding:5px;
 }
 .page-footer ul{
     z-index: 1;
   position: relative;
-  font-size: 11px;
+  font-size: 14px;
+  
  text-decoration: none;
  line-height: 1;
  padding: 10px;
   width: 100%;
   text-align: center;
-  display: block;
+  display: flex;
+  justify-content: center;
+
   transition: all 0.3s ease;
   padding-left: 10px; 
+}
+.copyright{
+    text-align: right;
+    font-size: 11px;
 }

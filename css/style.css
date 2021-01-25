@@ -1,1 +1,11 @@
 /* Note there a few "reset" styles given in reset.css. Review those before you begin */
+
+.page-header{
+    disply: grid;
+    grid-template-columns: auto1fr auto auto;
+}
+
+.search{
+    grid-row: 2;
+    grid-column: 1/ span 4;
+}

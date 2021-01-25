@@ -4,11 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
   } 
 
    nav{
     display: flex;
-    height: 60px;
+    height: 80px;
     width: 100%;
     background: #1b1b1b;
     align-items: center;
@@ -41,11 +42,11 @@
     letter-spacing: 1px;
     transition: all 0.3s ease;
   }
-  nav ul li .user_products{
+   nav ul li .user_products{
       margin-top: -5px; 
       padding: 0 0 0 0;
 
-  }
+  } 
   
   nav ul li a.active,
   nav ul li a:hover{
@@ -79,6 +80,7 @@
       content: "\f00d";
     }
     nav ul{
+        z-index: 1;
       position: fixed;
       top: 60px;
       left: -100%;
@@ -89,6 +91,7 @@
       display: block;
       transition: all 0.3s ease; 
     }
+    
     #click:checked ~ ul{
       left: 0;
     }
@@ -113,17 +116,55 @@
     }
     
   }
+  .products h1{
+    text-align: center;
+  }
 .page-header{
     display: grid;
     grid-template-columns: auto1fr auto auto;
 }
 
 .search{
-    grid-row: 2;
-    grid-column: 1/ span 4;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: beige;
+    text-align: center;
+    padding-bottom: 0.2rem;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.5rem;
    
 }
+.search button{
+    background-color: none;
+    text-decoration: none;
+    display: inline-block;
+}
+.filters{
+    font-size: 14px;
+    text-align: center; 
+    margin: 20px;
+    
+}
+.filters fieldset{
+    text-align: center;
+    width: 100%;
+    position:relative;
+    font-size: 11px;
+    padding: 5px;
+    display: flex;
+  justify-content: center;
+  
+}
+.filters li{
+   
+    display: inline;
+    list-style: none;
+}
 
+.subheading{
+    text-align: center;
+}
 
 .results dd{
     font-size: smaller;
@@ -166,6 +207,43 @@
     padding-bottom: 20px;
     
 }
+.pagination{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+.pagination a{
+    color: #000000;
+}
+.pagination li{
+    display: inline;
+    list-style: none;
+}
 
-
- 
+.page-footer{
+    background-color:  #1b1b1b;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1;
+}
+.page-footer li{
+    display: inline-block;
+}
+.page-footer a{
+    color: #ffffff;
+    line-height: 1.2;
+    text-decoration: none;;
+}
+.page-footer ul{
+    z-index: 1;
+  position: relative;
+  font-size: 11px;
+ text-decoration: none;
+ line-height: 1;
+ padding: 10px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+  padding-left: 10px; 
+}
